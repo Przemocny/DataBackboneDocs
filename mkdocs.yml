@@ -1,0 +1,63 @@
+site_name: ''
+
+nav:
+  - Strona główna: index.md
+  - Licencjonowanie:
+    - Licencja edukacyjna: licencing/educational-licence.md
+    - Licencja dla Twojej firmy: licencing/noncommercial-licence.md
+    - Licencja komercyjna: licencing/commercial-licence.md
+  - Pierwsze kroki:
+      - Instalacja: getting-started/installation.md
+      - Opis środowiska: getting-started/env-description.md
+  - Uzywane pojęcia:
+      - Intro: concepts/intro.md
+      - Zasoby: concepts/resources.md
+      - Wskaźniki: concepts/indicators.md
+      - Schematy walidacji: concepts/validation.md
+      - Webhooks: concepts/webhooks.md
+  - Przewodnik użytkownika:
+      - Pobieranie danych (zasobów): user-guide/data-fetching.md
+      - Przetwarzanie danych (wskaźników): user-guide/data-preprocessing.md
+      - Synchronizacja danych: user-guide/data-sync.md
+      - Użycie DataBackbone API: user-guide/api-usage.md
+  - Narzędzia:
+      - Działania równoległe: utils/parallel.md
+      - Logowanie i debugowanie: utils/logging-debugging.md
+  - Prompty:
+      - Generowanie grafów: prompts/graphs.md
+      - Generowanie kodu: prompts/code.md
+  - Przykłady:
+      - Podstawowe przykłady: examples/basic-examples.md
+      - Zaawansowane przypadki użycia: examples/advanced-use-cases.md
+  - Współpraca:
+      - Jak możesz pomóc: contributing/how-to-contribute.md
+
+theme:
+  name: material
+  logo: https://databackbone.tech/static/images/logo.png
+  palette:
+    scheme: slate
+    primary: custom
+  features:
+    - content.code.annotate
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/highlight.min.js
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+copyright: Copyright &copy; 2016 - 2020 Martin Donath
+
+extra:
+  generator: false
