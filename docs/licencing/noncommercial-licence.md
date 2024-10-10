@@ -10,7 +10,7 @@ Aby uzyskać bezpłatną licencję, należy:
 
 1. **Dokonać darowizny**: Przed rozpoczęciem korzystania z Data Backbone, prosimy o dokonanie wpłaty minimum 500 zł na dowolne schronisko dla zwierząt. Wpłata ta jest wyrazem wsparcia dla organizacji, które dbają o zwierzęta w potrzebie.
 
-2. **Przesłać potwierdzenie**: Po dokonaniu wpłaty, prosimy o przesłanie zdjęcia potwierdzenia przelewu na adres e-mail: licence@databackbone.tech. W wiadomości prosimy o podanie nazwy firmy oraz danych kontaktowych, co ułatwi nam proces weryfikacji.
+2. **Przesłać potwierdzenie**: Po dokonaniu wpłaty, prosimy o przesłanie zdjęcia potwierdzenia przelewu na adres e-mail: [licence@databackbone.tech](mailto:licence@databackbone.tech). W wiadomości prosimy o podanie nazwy firmy oraz danych kontaktowych, co ułatwi nam proces weryfikacji.
 
 3. **Otrzymać potwierdzenie**: Po zweryfikowaniu przesłanego potwierdzenia, skontaktujemy się z Tobą, aby potwierdzić przyznanie bezpłatnej licencji oraz przekazać niezbędne informacje dotyczące korzystania z naszych narzędzi.
 

@@ -35,7 +35,7 @@ nav:
     - Licencja dla Twojej firmy: licencing/noncommercial-licence.md
     - Licencja komercyjna: licencing/commercial-licence.md
   - Współpraca:
-      - Jak możesz pomóc: contributing/how-to-contribute.md
+      - Jak dołączyć do projektu?: contributing/how-to-contribute.md
 
 theme:
   name: material

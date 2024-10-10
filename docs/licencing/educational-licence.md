@@ -10,7 +10,7 @@ Aby skorzystać z licencji edukacyjnej, wystarczy spełnić kilka prostych warun
 
 1. **Zastosowanie edukacyjne**: Licencja jest przeznaczona wyłącznie do celów edukacyjnych, takich jak projekty studenckie, kursy akademickie czy badania naukowe związane z analityką danych i finansami.
 
-2. **Zgłoszenie chęci użycia**: Osoby lub instytucje zainteresowane korzystaniem z DataBackbone w celach edukacyjnych powinny wysłać wiadomość e-mail na adres edu@databackbone.tech. W wiadomości należy krótko opisać, w jaki sposób planowane jest wykorzystanie narzędzi DataBackbone.
+2. **Zgłoszenie chęci użycia**: Osoby lub instytucje zainteresowane korzystaniem z DataBackbone w celach edukacyjnych powinny wysłać wiadomość e-mail na adres [licence@databackbone.tech](mailto:licence@databackbone.tech). W wiadomości należy krótko opisać, w jaki sposób planowane jest wykorzystanie narzędzi DataBackbone.
 
 3. **Akceptacja warunków**: Po przesłaniu zgłoszenia i jego akceptacji, użytkownik otrzyma potwierdzenie oraz dostęp do narzędzi DataBackbone na warunkach licencji edukacyjnej.
 
