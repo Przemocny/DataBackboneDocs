@@ -2,14 +2,12 @@ site_name: ''
 
 nav:
   - Strona główna: index.md
-  - Licencjonowanie:
-    - Licencja edukacyjna: licencing/educational-licence.md
-    - Licencja dla Twojej firmy: licencing/noncommercial-licence.md
-    - Licencja komercyjna: licencing/commercial-licence.md
+  
   - Pierwsze kroki:
       - Instalacja: getting-started/installation.md
       - Opis środowiska: getting-started/env-description.md
-  - Uzywane pojęcia:
+      - Wymagane umiejętności: getting-started/requirements.md
+  - Używane pojęcia:
       - Intro: concepts/intro.md
       - Zasoby: concepts/resources.md
       - Wskaźniki: concepts/indicators.md
@@ -20,15 +18,22 @@ nav:
       - Przetwarzanie danych (wskaźników): user-guide/data-preprocessing.md
       - Synchronizacja danych: user-guide/data-sync.md
       - Użycie DataBackbone API: user-guide/api-usage.md
-  - Narzędzia:
+  - Narzędzia wspierające:
       - Działania równoległe: utils/parallel.md
       - Logowanie i debugowanie: utils/logging-debugging.md
-  - Prompty:
-      - Generowanie grafów: prompts/graphs.md
+  - Niektóre prompty, których używamy do pracy:
+      - Intro: prompts/intro.md
+      - Warsztaty z klientem: prompts/workshops.md
       - Generowanie kodu: prompts/code.md
+      - Generowanie analiz biznesowych: prompts/analysis.md
   - Przykłady:
       - Podstawowe przykłady: examples/basic-examples.md
       - Zaawansowane przypadki użycia: examples/advanced-use-cases.md
+
+  - Licencjonowanie:
+    - Licencja edukacyjna: licencing/educational-licence.md
+    - Licencja dla Twojej firmy: licencing/noncommercial-licence.md
+    - Licencja komercyjna: licencing/commercial-licence.md
   - Współpraca:
       - Jak możesz pomóc: contributing/how-to-contribute.md
 
@@ -58,6 +63,19 @@ markdown_extensions:
   - pymdownx.superfences
 
 copyright: Copyright &copy; 2016 - 2020 Martin Donath
+
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
 
 extra:
   generator: false
