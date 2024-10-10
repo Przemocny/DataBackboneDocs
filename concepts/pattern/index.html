@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../indicators/">
-      
-      
-        <link rel="next" href="../webhooks/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Schematy walidacji - </title>
+        <title>Pattern - </title>
       
     
     
@@ -80,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#nazwa-konceptu" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -111,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Schematy walidacji
+              Pattern
             
           </span>
         </div>
@@ -325,19 +326,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -351,7 +350,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Używane pojęcia
@@ -425,17 +424,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../validation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -444,7 +436,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1084,6 +1075,110 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nazwa-konceptu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nazwa Konceptu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nazwa Konceptu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lokalizacja-w-projekcie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lokalizacja w Projekcie
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zaozenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Założenia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wymagania" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wymagania
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#struktury-danych" class="md-nav__link">
+    <span class="md-ellipsis">
+      Struktury Danych
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kod
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfejs-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfejs API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obsuga-bedow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obsługa Błędów
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#znane-ograniczenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Znane Ograniczenia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1097,9 +1192,53 @@
                   
 
 
-  <h1>Schematy walidacji</h1>
+  <h1>Pattern</h1>
 
-
+<p>Struktura do generowania opisu do konceptów</p>
+<h2 id="nazwa-konceptu">Nazwa Konceptu</h2>
+<p>Krótki opis konceptu i jego głównego celu.</p>
+<h3 id="lokalizacja-w-projekcie">Lokalizacja w Projekcie</h3>
+<ul>
+<li>Ścieżka do pliku/modułu: <code>src/module/concept.py</code></li>
+<li>Linie kodu: 100-250</li>
+</ul>
+<h3 id="zaozenia">Założenia</h3>
+<ul>
+<li>Lista kluczowych założeń, na których opiera się koncept</li>
+<li>Ograniczenia i warunki brzegowe</li>
+</ul>
+<h3 id="wymagania">Wymagania</h3>
+<ul>
+<li>Zależności systemowe</li>
+<li>Wymagane biblioteki i ich wersje</li>
+<li>Inne niezbędne zasoby</li>
+</ul>
+<h3 id="struktury-danych">Struktury Danych</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>
+</span></code></pre></div>
+<h3 id="kod">Kod</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>
+</span></code></pre></div>
+<h3 id="interfejs-api">Interfejs API</h3>
+<ul>
+<li>Opis publicznych metod i funkcji</li>
+<li>Przykłady użycia</li>
+</ul>
+<h3 id="obsuga-bedow">Obsługa Błędów</h3>
+<ul>
+<li>Lista możliwych wyjątków</li>
+<li>Strategie obsługi błędów</li>
+</ul>
+<h3 id="testy">Testy</h3>
+<ul>
+<li>Opis testów jednostkowych</li>
+<li>Scenariusze testowe</li>
+</ul>
+<h3 id="znane-ograniczenia">Znane Ograniczenia</h3>
+<ul>
+<li>Lista znanych ograniczeń lub problemów</li>
+<li>Planowane ulepszenia</li>
+</ul>
 
 
 
