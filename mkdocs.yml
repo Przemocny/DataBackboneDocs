@@ -2,10 +2,12 @@ site_name: ''
 
 nav:
   - Strona główna: index.md
-  
+
   - Pierwsze kroki:
       - Instalacja: getting-started/installation.md
       - Opis środowiska: getting-started/env-description.md
+      - Instalacja środowiska developerskiego: getting-started/development-installation.md
+      - Instalacja środowiska produkcyjnego: getting-started/production-installation.md
       - Wymagane umiejętności: getting-started/requirements.md
   - Używane pojęcia:
       - Intro: concepts/intro.md
@@ -31,9 +33,9 @@ nav:
       - Zaawansowane przypadki użycia: examples/advanced-use-cases.md
 
   - Licencjonowanie:
-    - Licencja edukacyjna: licencing/educational-licence.md
-    - Licencja dla Twojej firmy: licencing/noncommercial-licence.md
-    - Licencja komercyjna: licencing/commercial-licence.md
+      - Licencja edukacyjna: licencing/educational-licence.md
+      - Licencja dla Twojej firmy: licencing/noncommercial-licence.md
+      - Licencja komercyjna: licencing/commercial-licence.md
   - Współpraca:
       - Jak dołączyć do projektu?: contributing/how-to-contribute.md
 

@@ -1,18 +1,53 @@
-![](https://databackbone.tech/static/images/wykres_oryginal.png)
+# Logowanie i debugowanie
 
-# Data Backbone - Odkryj wartość swoich danych biznesowych
+## Wprowadzenie
 
+System Data Backbone oferuje możliwości logowania i debugowania dzięki klasie `Logger`. Ta klasa umożliwia efektywne śledzenie działań systemu, co jest kluczowe dla utrzymania i rozwiązywania problemów.
 
-### Kręgosłup danych 
+## Klasa Logger
 
-Jesteśmy Usprawniacze Firm i stworzyliśmy narzędzie, które pomoże Twojej firmie odkryć nową wiedzę i wartość ukrytą we własnych danych.
+Klasa `Logger` jest głównym narzędziem do logowania w systemie Data Backbone.
 
-I odzyskaj spokój i kontrolę w technologicznej sferze Twojej firmy
+### Inicjalizacja
 
-## Czym jest Data Backbone?
+Aby utworzyć instancję loggera, użyj następującego kodu:
 
-Data Backbone to platforma, która ułatwia małym i średnim przedsiębiorstwom (MŚP) analizę danych z różnych źródeł. Wyobraź sobie, że masz dostęp do wszystkich swoich danych biznesowych w jednym miejscu - od emaili, przez dane z CRM, aż po firmowe excele. Data Backbone pomoże Ci połączyć te dane i wyciągnąć z nich wartościowe wnioski.
+```python
+logger = Logger(log_file='logfile.log')
+```
 
-## Jak Data Backbone może pomóc Twojej firmie?
+Parametr `log_file` jest opcjonalny i domyślnie ustawiony na 'logfile.log'.
 
-Załóżmy, że chcesz wiedzieć, ile marży generujesz na każdym z klientów w ujęciu miesięcznym. Data Backbone pozwoli Ci połączyć dane z systemu rejestracji czasu pracy (np. Clickup), dane o pensjach pracowników z excela oraz informacje o przepływach finansowych z konta bankowego. W rezultacie otrzymasz przejrzysty raport pokazujący marżę dla każdego klienta.
+### Metody
+
+#### log(message: str) -> None
+
+Metoda `log` zapisuje wiadomość z aktualnym znacznikiem czasu.
+
+Przykład użycia:
+
+```python
+logger.log("Rozpoczęto przetwarzanie danych")
+```
+
+#### \_write_to_file(message: str) -> None
+
+Metoda prywatna `_write_to_file` zapisuje wiadomość do pliku logów.
+
+### Format logów
+
+Każdy wpis w logu ma następujący format:
+
+```
+[RRRR-MM-DD GG:MM:SS] Treść wiadomości
+```
+
+## Dobre praktyki
+
+1. Używaj logowania do śledzenia kluczowych operacji w systemie.
+2. Zapisuj zarówno informacje o sukcesach, jak i błędach.
+3. Regularnie przeglądaj logi w celu wykrycia potencjalnych problemów.
+
+## Podsumowanie
+
+Klasa `Logger` w Data Backbone zapewnia prosty, ale skuteczny mechanizm logowania. Dzięki niej możesz łatwo śledzić działanie systemu, co jest nieocenione w procesie debugowania i utrzymania aplikacji.
