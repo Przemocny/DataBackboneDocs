@@ -2,7 +2,6 @@
 
 # Data Backbone - Odkryj wartość swoich danych biznesowych
 
-
 ### Kręgosłup danych 
 
 Jesteśmy Usprawniacze Firm i stworzyliśmy narzędzie, które pomoże Twojej firmie odkryć nową wiedzę i wartość ukrytą we własnych danych.
