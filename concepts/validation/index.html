@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
     
     
       
@@ -79,6 +79,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#schematy-walidacji" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -258,11 +263,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/installation/" class="md-nav__link">
+      <a href="../../getting-started/env-description/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Instalacja
+    Opis środowiska
   </span>
   
 
@@ -279,11 +284,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/env-description/" class="md-nav__link">
+      <a href="../../getting-started/development-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Opis środowiska
+    Instalacja środowiska developerskiego
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/production-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja środowiska produkcyjnego
   </span>
   
 
@@ -434,6 +460,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Schematy walidacji
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -444,6 +483,139 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wprowadzenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wprowadzenie
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#argument-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Argument Schema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Argument Schema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema_out" class="md-nav__link">
+    <span class="md-ellipsis">
+      schema_out
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="schema_out">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przykad-schema_out" class="md-nav__link">
+    <span class="md-ellipsis">
+      Przykład schema_out
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metody-klasy-validator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metody klasy Validator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metody klasy Validator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-validate" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. validate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. validate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#argumenty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Argumenty
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zwraca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zwraca
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-_validate_nested_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. _validate_nested_type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-_type_to_str" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. _type_to_str
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1083,6 +1255,130 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wprowadzenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wprowadzenie
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#argument-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Argument Schema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Argument Schema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema_out" class="md-nav__link">
+    <span class="md-ellipsis">
+      schema_out
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="schema_out">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przykad-schema_out" class="md-nav__link">
+    <span class="md-ellipsis">
+      Przykład schema_out
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metody-klasy-validator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metody klasy Validator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metody klasy Validator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-validate" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. validate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. validate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#argumenty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Argumenty
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zwraca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zwraca
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-_validate_nested_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. _validate_nested_type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-_type_to_str" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. _type_to_str
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1097,9 +1393,56 @@
                   
 
 
-  <h1>Schematy walidacji</h1>
-
-
+<h1 id="schematy-walidacji">Schematy walidacji</h1>
+<h2 id="wprowadzenie">Wprowadzenie</h2>
+<p>Klasa <code>Validator</code> służy do walidacji obiektów <code>DataFrame</code> z biblioteki Pandas zgodnie z określonym schematem. Umożliwia sprawdzenie poprawności typów danych w kolumnach DataFrame'a na podstawie dostarczonego schematu.</p>
+<h2 id="argument-schema">Argument Schema</h2>
+<h3 id="schema_out">schema_out</h3>
+<p><code>schema_out</code> jest argumentem przekazywanym do Validatora, zdefiniowanym jako zagnieżdżony słownik, gdzie klucze reprezentują nazwy pól, a wartości reprezentują oczekiwane typy danych. W schemacie <code>schema_out</code>, wartości, takie jak <code>str</code>, <code>int</code> i <code>float</code>, to klasy wbudowane w Pythonie i reprezentują typy danych.</p>
+<h4 id="przykad-schema_out">Przykład schema_out</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">schema_out</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="s2">&quot;client&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="s2">&quot;date&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="s2">&quot;cycles_with_invoices&quot;</span><span class="p">:</span> <span class="p">[</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>            <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>            <span class="s2">&quot;cycle_number&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            <span class="s2">&quot;date_of_payment&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>            <span class="s2">&quot;end_of_cycle&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            <span class="s2">&quot;total_hours_with_buffer&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="s2">&quot;remaining_hours_with_buffer&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            <span class="s2">&quot;programmers&quot;</span><span class="p">:</span> <span class="p">[</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                <span class="p">{</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                    <span class="s2">&quot;user_name&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>                    <span class="s2">&quot;worked_time&quot;</span><span class="p">:</span> <span class="nb">float</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>                <span class="p">}</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>            <span class="p">],</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>            <span class="s2">&quot;worked_time&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            <span class="s2">&quot;hour_cap&quot;</span><span class="p">:</span> <span class="nb">float</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="p">}</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    <span class="p">]</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="metody-klasy-validator">Metody klasy Validator</h2>
+<h3 id="1-validate">1. <code>validate</code></h3>
+<p>Waliduje DataFrame zgodnie z podanym schematem. Sprawdza, czy wszystkie wymagane kolumny są obecne oraz czy wartości w poszczególnych kolumnach odpowiadają oczekiwanym typom. W przypadku błędów zgłasza wyjątek.</p>
+<h4 id="argumenty">Argumenty</h4>
+<ul>
+<li><code>df</code> (pd.DataFrame): DataFrame do walidacji.</li>
+<li><code>schema</code> (Dict[str, Any]): Schemat definiujący oczekiwane typy dla kolumn.</li>
+</ul>
+<h4 id="zwraca">Zwraca</h4>
+<ul>
+<li><code>pd.DataFrame</code>: Zwalidowany DataFrame.</li>
+</ul>
+<hr />
+<h3 id="2-_validate_nested_type">2. <code>_validate_nested_type</code></h3>
+<p>Sprawdza, czy pojedyncza wartość odpowiada oczekiwanemu typowi, obsługując również zagnieżdżone struktury danych (np. słowniki i listy). Umożliwia walidację bardziej złożonych typów danych.</p>
+<hr />
+<h3 id="3-_type_to_str">3. <code>_type_to_str</code></h3>
+<p>Konwertuje typ lub strukturę typu na czytelną reprezentację w formie string. Używana przede wszystkim do debugowania i informowania o błędach podczas walidacji.</p>
+<hr />
 
 
 
