@@ -1,22 +1,16 @@
 # Koncept zasobu i wskaźnika
 
+## Czym jest zasób
 
-## Czym jest zasób 
 Koncept zasobu odnosi się do połączenia opisu
-
-
 
 ## Czym jest wskaźnik
 
-
-Koncept zasobu odnosi się do abstrakcyjnego przedstawienia danych lub funkcji, które są dostępne w systemie, umożliwiając ich łatwe zarządzanie i integrację. Zasoby mogą reprezentować różnorodne elementy, takie jak dane finansowe, użytkownicy czy transakcje, i są często wykorzystywane w aplikacjach do organizacji i strukturyzacji informacji. 
-
-
+Koncept zasobu odnosi się do abstrakcyjnego przedstawienia danych lub funkcji, które są dostępne w systemie, umożliwiając ich łatwe zarządzanie i integrację. Zasoby mogą reprezentować różnorodne elementy, takie jak dane finansowe, użytkownicy czy transakcje, i są często wykorzystywane w aplikacjach do organizacji i strukturyzacji informacji.
 
 ## Struktura JSON Zasobu
 
 ```json
- 
 {
   "name": "StripeInvoices",
   "description": "Zasób faktur ze Stripe",
@@ -27,7 +21,6 @@ Koncept zasobu odnosi się do abstrakcyjnego przedstawienia danych lub funkcji, 
   },
   "action": "fetch_stripe_invoices"
 }
-
 ```
 
 ## Składowe funkcji fetch_stripe_invoices:
@@ -35,9 +28,9 @@ Koncept zasobu odnosi się do abstrakcyjnego przedstawienia danych lub funkcji, 
 - Niezbędne zależności do realizacji logiki biznesowej
 - Schema walidacji danych wychodzących
 - Części akcji pobierania zasobu
-    - Funkcje collect
-    - Funkcja morph_json_with_pandas
-    - Funkcja validate_output
+  - Funkcje collect
+  - Funkcja morph_json_with_pandas
+  - Funkcja validate_output
 - Cały kod akcji pobierania zasobu
 
 ### 1. Niezbędne zależności do realizacji logiki biznesowej
@@ -54,6 +47,7 @@ from utils.validator import Validator
 
 
 ```
+
 ### 2. Schema walidacji danych wychodzących
 
 ```python
@@ -88,13 +82,13 @@ def collect_invoices_from_stripe(accumulator:list=[]):
     headers = {
         "Authorization": f"Bearer {STRIPE_KEY}"  # Ustaw nagłówki autoryzacyjne dla żądań HTTP
     }
-    
+
     invoices = accumulator  # Inicjalizuj listę faktur
 
     if len(invoices) == NUMBER_OF_MISSING_INVOICES:
         url = "https://api.stripe.com/v1/invoices?status=paid&limit=100"  # URL do pobierania faktur z Stripe
     if len(invoices) > NUMBER_OF_MISSING_INVOICES:
-        url = f"https://api.stripe.com/v1/invoices?status=paid&limit=100&starting_after={invoices[-1]['id']}" 
+        url = f"https://api.stripe.com/v1/invoices?status=paid&limit=100&starting_after={invoices[-1]['id']}"
 
     response = requests.get(url, headers=headers)  # Wykonaj żądanie HTTP GET do API Stripe
 
@@ -104,7 +98,7 @@ def collect_invoices_from_stripe(accumulator:list=[]):
     data = response.json()['data']  # Pobierz dane JSON z odpowiedzi
     if not data:  # Sprawdź, czy dane są puste
         return invoices  # Zakończ rekurencję i zwróć faktury
-    
+
     invoices.extend(data)  # Dodaj pobrane faktury do listy invoices
     return collect_invoices_from_stripe(invoices)
 
@@ -120,6 +114,7 @@ missing_invoices = collect_missing_invoices()  # Pobranie brakujących faktur ze
 all_stripe_invoices = collect_invoices_from_stripe(missing_invoices)  # Pobranie wszystkich faktur ze Stripe
 
 ```
+
 #### 3b. Funkcja morph_json_with_pandas
 
 ```python
@@ -128,13 +123,13 @@ all_stripe_invoices = collect_invoices_from_stripe(missing_invoices)  # Pobranie
 def morph_json_with_pandas(data: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """Przekształć dane JSON na DataFrame i przefiltruj kolumny"""
     columns_wanted = [
-        'id', 'amount_paid', 'lines', 'total', 'created', 
+        'id', 'amount_paid', 'lines', 'total', 'created',
         'status', 'customer'
     ]  # Definicja kolumn, które chcemy zachować
 
     df = pd.DataFrame(data)  # Stworzenie DataFrame z danych JSON
     df = df[columns_wanted]  # Zachowanie tylko wybranych kolumn w DataFrame
-    
+
     df['created'] = df['created'].astype(int)  # Przekształcenie kolumny 'created' na typ int
 
     # Przypisanie wartości do odpowiednich kolumn
@@ -150,7 +145,7 @@ def morph_json_with_pandas(data: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return df
 
 ```
- 
+
 #### 3c. Funkcja validate_output
 
 ```python
@@ -189,13 +184,13 @@ schema_out = {
 def morph_json_with_pandas(data: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """Przekształć dane JSON na DataFrame i przefiltruj kolumny"""
     columns_wanted = [
-        'id', 'amount_paid', 'lines', 'total', 'created', 
+        'id', 'amount_paid', 'lines', 'total', 'created',
         'status', 'customer'
     ]  # Definicja kolumn, które chcemy zachować
 
     df = pd.DataFrame(data)  # Stworzenie DataFrame z danych JSON
     df = df[columns_wanted]  # Zachowanie tylko wybranych kolumn w DataFrame
-    
+
     df['created'] = df['created'].astype(int)  # Przekształcenie kolumny 'created' na typ int
 
     # Przypisanie wartości do odpowiednich kolumn
@@ -224,19 +219,19 @@ def fetch_stripe_invoices(resource_setting: Resource, mongo_client: MongoClient)
     df_invoices = pd.DataFrame(all_stripe_invoices)  # Stworzenie DataFrame ze wszystkich faktur
 
     # Przefiltrowanie faktur, aby usunąć te z określonymi ID
-    filtered_all_invoices = df_invoices[~df_invoices['id'].isin(['in_1PTOUuE2fekoERPNjIgQdiNh', 'in_1PXip9E2fekoERPNATlFnNUR'])].to_dict('records') 
+    filtered_all_invoices = df_invoices[~df_invoices['id'].isin(['in_1PTOUuE2fekoERPNjIgQdiNh', 'in_1PXip9E2fekoERPNATlFnNUR'])].to_dict('records')
     df_invoices = pd.DataFrame(filtered_all_invoices)
-    
+
     df_invoices['lines'] = df_invoices['lines'].apply(check_if_metadata_exists)
-    
+
     filtered_all_invoices = df_invoices.to_dict(orient='records')
-    
+
     filtered_all_invoices = df_invoices.to_dict(orient='records')
 
     complete_invoices = morph_json_with_pandas(filtered_all_invoices)
 
     complete_invoices = validate_output(complete_invoices, schema_out)
-    
+
     dict_invoices = complete_invoices.to_dict(orient='records')
 
     return dict_invoices  # Zwrócenie kompletnych faktur

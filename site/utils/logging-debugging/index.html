@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
     
     
       
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-backbone-odkryj-wartosc-swoich-danych-biznesowych" class="md-skip">
+        <a href="#logowanie-i-debugowanie" class="md-skip">
           Skip to content
         </a>
       
@@ -263,11 +263,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/installation/" class="md-nav__link">
+      <a href="../../getting-started/env-description/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Instalacja
+    Opis środowiska
   </span>
   
 
@@ -284,11 +284,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/env-description/" class="md-nav__link">
+      <a href="../../getting-started/development-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Opis środowiska
+    Instalacja środowiska developerskiego
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/production-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja środowiska produkcyjnego
   </span>
   
 
@@ -710,27 +731,93 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#kregosup-danych" class="md-nav__link">
+  <a href="#wprowadzenie" class="md-nav__link">
     <span class="md-ellipsis">
-      Kręgosłup danych
+      Wprowadzenie
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#czym-jest-data-backbone" class="md-nav__link">
+  <a href="#klasa-logger" class="md-nav__link">
     <span class="md-ellipsis">
-      Czym jest Data Backbone?
+      Klasa Logger
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Klasa Logger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inicjalizacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inicjalizacja
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metody" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metody
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metody">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logmessage-str-none" class="md-nav__link">
+    <span class="md-ellipsis">
+      log(message: str) -&gt; None
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_write_to_filemessage-str-none" class="md-nav__link">
+    <span class="md-ellipsis">
+      _write_to_file(message: str) -&gt; None
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-logow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format logów
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dobre-praktyki" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dobre praktyki
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#jak-data-backbone-moze-pomoc-twojej-firmie" class="md-nav__link">
+  <a href="#podsumowanie" class="md-nav__link">
     <span class="md-ellipsis">
-      Jak Data Backbone może pomóc Twojej firmie?
+      Podsumowanie
     </span>
   </a>
   
@@ -1157,27 +1244,93 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#kregosup-danych" class="md-nav__link">
+  <a href="#wprowadzenie" class="md-nav__link">
     <span class="md-ellipsis">
-      Kręgosłup danych
+      Wprowadzenie
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#czym-jest-data-backbone" class="md-nav__link">
+  <a href="#klasa-logger" class="md-nav__link">
     <span class="md-ellipsis">
-      Czym jest Data Backbone?
+      Klasa Logger
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Klasa Logger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inicjalizacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inicjalizacja
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metody" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metody
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metody">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logmessage-str-none" class="md-nav__link">
+    <span class="md-ellipsis">
+      log(message: str) -&gt; None
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_write_to_filemessage-str-none" class="md-nav__link">
+    <span class="md-ellipsis">
+      _write_to_file(message: str) -&gt; None
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-logow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format logów
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dobre-praktyki" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dobre praktyki
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#jak-data-backbone-moze-pomoc-twojej-firmie" class="md-nav__link">
+  <a href="#podsumowanie" class="md-nav__link">
     <span class="md-ellipsis">
-      Jak Data Backbone może pomóc Twojej firmie?
+      Podsumowanie
     </span>
   </a>
   
@@ -1198,15 +1351,36 @@
                   
 
 
-<p><a class="glightbox" href="https://databackbone.tech/static/images/wykres_oryginal.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="https://databackbone.tech/static/images/wykres_oryginal.png" /></a></p>
-<h1 id="data-backbone-odkryj-wartosc-swoich-danych-biznesowych">Data Backbone - Odkryj wartość swoich danych biznesowych</h1>
-<h3 id="kregosup-danych">Kręgosłup danych</h3>
-<p>Jesteśmy Usprawniacze Firm i stworzyliśmy narzędzie, które pomoże Twojej firmie odkryć nową wiedzę i wartość ukrytą we własnych danych.</p>
-<p>I odzyskaj spokój i kontrolę w technologicznej sferze Twojej firmy</p>
-<h2 id="czym-jest-data-backbone">Czym jest Data Backbone?</h2>
-<p>Data Backbone to platforma, która ułatwia małym i średnim przedsiębiorstwom (MŚP) analizę danych z różnych źródeł. Wyobraź sobie, że masz dostęp do wszystkich swoich danych biznesowych w jednym miejscu - od emaili, przez dane z CRM, aż po firmowe excele. Data Backbone pomoże Ci połączyć te dane i wyciągnąć z nich wartościowe wnioski.</p>
-<h2 id="jak-data-backbone-moze-pomoc-twojej-firmie">Jak Data Backbone może pomóc Twojej firmie?</h2>
-<p>Załóżmy, że chcesz wiedzieć, ile marży generujesz na każdym z klientów w ujęciu miesięcznym. Data Backbone pozwoli Ci połączyć dane z systemu rejestracji czasu pracy (np. Clickup), dane o pensjach pracowników z excela oraz informacje o przepływach finansowych z konta bankowego. W rezultacie otrzymasz przejrzysty raport pokazujący marżę dla każdego klienta.</p>
+<h1 id="logowanie-i-debugowanie">Logowanie i debugowanie</h1>
+<h2 id="wprowadzenie">Wprowadzenie</h2>
+<p>System Data Backbone oferuje możliwości logowania i debugowania dzięki klasie <code>Logger</code>. Ta klasa umożliwia efektywne śledzenie działań systemu, co jest kluczowe dla utrzymania i rozwiązywania problemów.</p>
+<h2 id="klasa-logger">Klasa Logger</h2>
+<p>Klasa <code>Logger</code> jest głównym narzędziem do logowania w systemie Data Backbone.</p>
+<h3 id="inicjalizacja">Inicjalizacja</h3>
+<p>Aby utworzyć instancję loggera, użyj następującego kodu:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">logger</span> <span class="o">=</span> <span class="n">Logger</span><span class="p">(</span><span class="n">log_file</span><span class="o">=</span><span class="s1">&#39;logfile.log&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Parametr <code>log_file</code> jest opcjonalny i domyślnie ustawiony na 'logfile.log'.</p>
+<h3 id="metody">Metody</h3>
+<h4 id="logmessage-str-none">log(message: str) -&gt; None</h4>
+<p>Metoda <code>log</code> zapisuje wiadomość z aktualnym znacznikiem czasu.</p>
+<p>Przykład użycia:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">logger</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Rozpoczęto przetwarzanie danych&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="_write_to_filemessage-str-none">_write_to_file(message: str) -&gt; None</h4>
+<p>Metoda prywatna <code>_write_to_file</code> zapisuje wiadomość do pliku logów.</p>
+<h3 id="format-logow">Format logów</h3>
+<p>Każdy wpis w logu ma następujący format:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>[RRRR-MM-DD GG:MM:SS] Treść wiadomości
+</span></code></pre></div>
+<h2 id="dobre-praktyki">Dobre praktyki</h2>
+<ol>
+<li>Używaj logowania do śledzenia kluczowych operacji w systemie.</li>
+<li>Zapisuj zarówno informacje o sukcesach, jak i błędach.</li>
+<li>Regularnie przeglądaj logi w celu wykrycia potencjalnych problemów.</li>
+</ol>
+<h2 id="podsumowanie">Podsumowanie</h2>
+<p>Klasa <code>Logger</code> w Data Backbone zapewnia prosty, ale skuteczny mechanizm logowania. Dzięki niej możesz łatwo śledzić działanie systemu, co jest nieocenione w procesie debugowania i utrzymania aplikacji.</p>
 
 
 

@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
     
     
       
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#koncept-zasobu-i-wskaznika" class="md-skip">
+        <a href="#webhooks" class="md-skip">
           Skip to content
         </a>
       
@@ -263,11 +263,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/installation/" class="md-nav__link">
+      <a href="../../getting-started/env-description/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Instalacja
+    Opis środowiska
   </span>
   
 
@@ -284,11 +284,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/env-description/" class="md-nav__link">
+      <a href="../../getting-started/development-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Opis środowiska
+    Instalacja środowiska developerskiego
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/production-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja środowiska produkcyjnego
   </span>
   
 
@@ -500,92 +521,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#czym-jest-zasob" class="md-nav__link">
+  <a href="#wprowadzenie" class="md-nav__link">
     <span class="md-ellipsis">
-      Czym jest zasób
+      Wprowadzenie
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#czym-jest-wskaznik" class="md-nav__link">
+  <a href="#zastosowanie" class="md-nav__link">
     <span class="md-ellipsis">
-      Czym jest wskaźnik
+      Zastosowanie
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#struktura-json-zasobu" class="md-nav__link">
+  <a href="#konfiguracja" class="md-nav__link">
     <span class="md-ellipsis">
-      Struktura JSON Zasobu
+      Konfiguracja
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#skadowe-funkcji-fetch_stripe_invoices" class="md-nav__link">
+  <a href="#struktura-webhooka" class="md-nav__link">
     <span class="md-ellipsis">
-      Składowe funkcji fetch_stripe_invoices:
+      Struktura Webhooka
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Składowe funkcji fetch_stripe_invoices:">
+    <nav class="md-nav" aria-label="Struktura Webhooka">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-niezbedne-zaleznosci-do-realizacji-logiki-biznesowej" class="md-nav__link">
+  <a href="#parametry" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Niezbędne zależności do realizacji logiki biznesowej
+      Parametry:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-schema-walidacji-danych-wychodzacych" class="md-nav__link">
+  <a href="#typy-danych" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Schema walidacji danych wychodzących
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-akcja-pobierania-zasobu" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Akcja pobierania zasobu
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Akcja pobierania zasobu">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3a-funkcje-collect" class="md-nav__link">
-    <span class="md-ellipsis">
-      3a. Funkcje collect
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3b-funkcja-morph_json_with_pandas" class="md-nav__link">
-    <span class="md-ellipsis">
-      3b. Funkcja morph_json_with_pandas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3c-funkcja-validate_output" class="md-nav__link">
-    <span class="md-ellipsis">
-      3c. Funkcja validate_output
+      Typy danych:
     </span>
   </a>
   
@@ -595,18 +579,40 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#4-cay-kod-akcji-pobierania-zasobu" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#implementacja-webhooka" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Cały kod akcji pobierania zasobu
+      Implementacja Webhooka
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#przykad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Przykład
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bezpieczenstwo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bezpieczeństwo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podsumowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Podsumowanie
+    </span>
+  </a>
   
 </li>
       
@@ -1241,92 +1247,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#czym-jest-zasob" class="md-nav__link">
+  <a href="#wprowadzenie" class="md-nav__link">
     <span class="md-ellipsis">
-      Czym jest zasób
+      Wprowadzenie
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#czym-jest-wskaznik" class="md-nav__link">
+  <a href="#zastosowanie" class="md-nav__link">
     <span class="md-ellipsis">
-      Czym jest wskaźnik
+      Zastosowanie
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#struktura-json-zasobu" class="md-nav__link">
+  <a href="#konfiguracja" class="md-nav__link">
     <span class="md-ellipsis">
-      Struktura JSON Zasobu
+      Konfiguracja
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#skadowe-funkcji-fetch_stripe_invoices" class="md-nav__link">
+  <a href="#struktura-webhooka" class="md-nav__link">
     <span class="md-ellipsis">
-      Składowe funkcji fetch_stripe_invoices:
+      Struktura Webhooka
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Składowe funkcji fetch_stripe_invoices:">
+    <nav class="md-nav" aria-label="Struktura Webhooka">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-niezbedne-zaleznosci-do-realizacji-logiki-biznesowej" class="md-nav__link">
+  <a href="#parametry" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Niezbędne zależności do realizacji logiki biznesowej
+      Parametry:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-schema-walidacji-danych-wychodzacych" class="md-nav__link">
+  <a href="#typy-danych" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Schema walidacji danych wychodzących
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-akcja-pobierania-zasobu" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Akcja pobierania zasobu
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Akcja pobierania zasobu">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3a-funkcje-collect" class="md-nav__link">
-    <span class="md-ellipsis">
-      3a. Funkcje collect
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3b-funkcja-morph_json_with_pandas" class="md-nav__link">
-    <span class="md-ellipsis">
-      3b. Funkcja morph_json_with_pandas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3c-funkcja-validate_output" class="md-nav__link">
-    <span class="md-ellipsis">
-      3c. Funkcja validate_output
+      Typy danych:
     </span>
   </a>
   
@@ -1336,18 +1305,40 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#4-cay-kod-akcji-pobierania-zasobu" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#implementacja-webhooka" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Cały kod akcji pobierania zasobu
+      Implementacja Webhooka
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#przykad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Przykład
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bezpieczenstwo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bezpieczeństwo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podsumowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Podsumowanie
+    </span>
+  </a>
   
 </li>
       
@@ -1366,207 +1357,99 @@
                   
 
 
-<h1 id="koncept-zasobu-i-wskaznika">Koncept zasobu i wskaźnika</h1>
-<h2 id="czym-jest-zasob">Czym jest zasób</h2>
-<p>Koncept zasobu odnosi się do połączenia opisu</p>
-<h2 id="czym-jest-wskaznik">Czym jest wskaźnik</h2>
-<p>Koncept zasobu odnosi się do abstrakcyjnego przedstawienia danych lub funkcji, które są dostępne w systemie, umożliwiając ich łatwe zarządzanie i integrację. Zasoby mogą reprezentować różnorodne elementy, takie jak dane finansowe, użytkownicy czy transakcje, i są często wykorzystywane w aplikacjach do organizacji i strukturyzacji informacji. </p>
-<h2 id="struktura-json-zasobu">Struktura JSON Zasobu</h2>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;StripeInvoices&quot;</span><span class="p">,</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Zasób faktur ze Stripe&quot;</span><span class="p">,</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;department&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;finance&quot;</span><span class="p">,</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;id&quot;</span><span class="p">,</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">&quot;updated&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;created&quot;</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fetch_stripe_invoices&quot;</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="skadowe-funkcji-fetch_stripe_invoices">Składowe funkcji fetch_stripe_invoices:</h2>
+<h1 id="webhooks">Webhooks</h1>
+<h2 id="wprowadzenie">Wprowadzenie</h2>
+<p>Webhooki w Data Backbone służą do aktualizowania zasobów i wskaźników w odpowiedzi na zdarzenia zachodzące w zewnętrznych systemach. Umożliwiają one automatyczne odświeżanie danych w Data Backbone, gdy nastąpią zmiany w zintegrowanych aplikacjach, takich jak Clickup czy Stripe.</p>
+<h2 id="zastosowanie">Zastosowanie</h2>
+<p>Webhooki są używane do:</p>
 <ul>
-<li>Niezbędne zależności do realizacji logiki biznesowej</li>
-<li>Schema walidacji danych wychodzących</li>
-<li>Części akcji pobierania zasobu<ul>
-<li>Funkcje collect</li>
-<li>Funkcja morph_json_with_pandas</li>
-<li>Funkcja validate_output</li>
+<li>Reagowania na zmiany w innych systemach</li>
+<li>Automatycznego odświeżania danych w Data Backbone</li>
+<li>Synchronizacji danych na podstawie konkretnych zdarzeń</li>
 </ul>
+<p>Przykłady:</p>
+<ol>
+<li>Ustawienie automatyzacji w Clickup, która wywołuje webhook w Data Backbone, aby odświeżyć dane po określonym zdarzeniu.</li>
+<li>Odbieranie informacji o nowej płatności w Stripe i synchronizacja odpowiednich danych w Data Backbone.</li>
+</ol>
+<h2 id="konfiguracja">Konfiguracja</h2>
+<ol>
+<li>Adres URL webhooka w Data Backbone ma format:</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://twoja-domena.com/webhooks/$nazwa_fn
+</span></code></pre></div>
+<p>gdzie <code>$nazwa_fn</code> to nazwa funkcji webhooka zdefiniowanej w pliku Python.</p>
+<ol>
+<li>Na przykład, dla funkcji <code>example_webhook</code>, adres URL będzie:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://twoja-domena.com/webhooks/example_webhook
+</span></code></pre></div></li>
+</ol>
+<h2 id="struktura-webhooka">Struktura Webhooka</h2>
+<p>Webhook w Data Backbone jest funkcją Python o następującej strukturze:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span> <span class="nf">example_webhook</span><span class="p">(</span><span class="n">mongo_client</span><span class="p">:</span> <span class="n">MongoClient</span><span class="p">,</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>                    <span class="n">request_body</span><span class="p">:</span> <span class="n">RequestBody</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>                    <span class="n">request_url_params</span><span class="p">:</span> <span class="n">RequestUrlParams</span><span class="p">):</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="c1"># Logika webhooka</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="k">return</span> <span class="p">{</span> <span class="s2">&quot;request_body&quot;</span><span class="p">:</span> <span class="n">request_body</span><span class="p">,</span> <span class="s2">&quot;request_url_params&quot;</span><span class="p">:</span> <span class="n">request_url_params</span> <span class="p">}</span>
+</span></code></pre></div>
+<h3 id="parametry">Parametry:</h3>
+<ul>
+<li><code>mongo_client</code>: Instancja MongoClient do interakcji z bazą danych</li>
+<li><code>request_body</code>: Słownik zawierający dane przesłane w ciele żądania</li>
+<li><code>request_url_params</code>: Słownik zawierający parametry URL żądania</li>
+</ul>
+<h3 id="typy-danych">Typy danych:</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">RequestBody</span> <span class="o">=</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">RequestUrlParams</span> <span class="o">=</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">WebhookFunctionType</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="p">[</span><span class="n">MongoClient</span><span class="p">,</span> <span class="n">RequestBody</span><span class="p">,</span> <span class="n">RequestUrlParams</span><span class="p">],</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="implementacja-webhooka">Implementacja Webhooka</h2>
+<p>Aby zaimplementować webhook:</p>
+<ol>
+<li>Utwórz nowy plik Python w katalogu <code>app/__webhooks__/actions/</code>.</li>
+<li>Zdefiniuj funkcję webhooka zgodnie z powyższą strukturą.</li>
+<li>
+<p>Zaimplementuj logikę przetwarzania danych:</p>
 </li>
-<li>Cały kod akcji pobierania zasobu</li>
-</ul>
-<h3 id="1-niezbedne-zaleznosci-do-realizacji-logiki-biznesowej">1. Niezbędne zależności do realizacji logiki biznesowej</h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>  <span class="c1"># Import Pandas do pracy z danymi w formie tabel</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>  <span class="c1"># Import funkcji load_dotenv do ładowania zmiennych środowiskowych z pliku .env</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span> <span class="nn">__resources__.types</span> <span class="kn">import</span> <span class="n">Resource</span><span class="p">,</span> <span class="n">MongoClient</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">from</span> <span class="nn">external_services.stripe.utils</span> <span class="kn">import</span> <span class="n">check_if_metadata_exists</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kn">from</span> <span class="nn">external_services.stripe.stripe_client</span> <span class="kn">import</span> <span class="n">collect_invoices_from_stripe</span><span class="p">,</span> <span class="n">collect_missing_invoices</span>  <span class="c1"># Import funkcji do pobierania faktur z Stripe</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>  <span class="c1"># Import typów dla adnotacji</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="kn">from</span> <span class="nn">utils.validator</span> <span class="kn">import</span> <span class="n">Validator</span>
-</span></code></pre></div>
-<h3 id="2-schema-walidacji-danych-wychodzacych">2. Schema walidacji danych wychodzących</h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">schema_out</span> <span class="o">=</span> <span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="s2">&quot;amount_paid&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="s2">&quot;total&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="s2">&quot;created&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="s2">&quot;customer&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="s2">&quot;hours_capacity_per_payment&quot;</span><span class="p">:</span> <span class="nb">int</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="3-akcja-pobierania-zasobu">3. Akcja pobierania zasobu</h3>
-<h4 id="3a-funkcje-collect">3a. Funkcje collect</h4>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># implementacja</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">import</span> <span class="nn">requests</span>  <span class="c1"># Import modułu requests do wykonywania żądań HTTP</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>  <span class="c1"># Import funkcji load_dotenv do ładowania zmiennych środowiskowych z pliku .env</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="kn">import</span> <span class="nn">os</span>  <span class="c1"># Import modułu os do pracy z systemem operacyjnym</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">def</span> <span class="nf">collect_invoices_from_stripe</span><span class="p">(</span><span class="n">accumulator</span><span class="p">:</span><span class="nb">list</span><span class="o">=</span><span class="p">[]):</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">NUMBER_OF_MISSING_INVOICES</span> <span class="o">=</span> <span class="mi">3</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">load_dotenv</span><span class="p">()</span>  <span class="c1"># Załaduj zmienne środowiskowe z pliku .env</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">STRIPE_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;STRIPE_KEY&#39;</span><span class="p">)</span>  <span class="c1"># Pobierz klucz API Stripe ze zmiennych środowiskowych</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Bearer </span><span class="si">{</span><span class="n">STRIPE_KEY</span><span class="si">}</span><span class="s2">&quot;</span>  <span class="c1"># Ustaw nagłówki autoryzacyjne dla żądań HTTP</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="p">}</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="n">invoices</span> <span class="o">=</span> <span class="n">accumulator</span>  <span class="c1"># Inicjalizuj listę faktur</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">invoices</span><span class="p">)</span> <span class="o">==</span> <span class="n">NUMBER_OF_MISSING_INVOICES</span><span class="p">:</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>        <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.stripe.com/v1/invoices?status=paid&amp;limit=100&quot;</span>  <span class="c1"># URL do pobierania faktur z Stripe</span>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">invoices</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">NUMBER_OF_MISSING_INVOICES</span><span class="p">:</span>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://api.stripe.com/v1/invoices?status=paid&amp;limit=100&amp;starting_after=</span><span class="si">{</span><span class="n">invoices</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span> 
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>  <span class="c1"># Wykonaj żądanie HTTP GET do API Stripe</span>
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>  <span class="c1"># Sprawdź, czy odpowiedź ma status 200 (OK)</span>
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Błąd podczas pobierania danych z collect_invoices_from_stripe. Kod statusu: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Rzuć wyjątek w przypadku błędu</span>
-</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>
-</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>  <span class="c1"># Pobierz dane JSON z odpowiedzi</span>
-</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">:</span>  <span class="c1"># Sprawdź, czy dane są puste</span>
-</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>        <span class="k">return</span> <span class="n">invoices</span>  <span class="c1"># Zakończ rekurencję i zwróć faktury</span>
-</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>
-</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>    <span class="n">invoices</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># Dodaj pobrane faktury do listy invoices</span>
-</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    <span class="k">return</span> <span class="n">collect_invoices_from_stripe</span><span class="p">(</span><span class="n">invoices</span><span class="p">)</span>
-</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>
-</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>
-</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="c1"># użycie</span>
-</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>
-</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="kn">from</span> <span class="nn">external_services.stripe.utils</span> <span class="kn">import</span> <span class="n">check_if_metadata_exists</span>
-</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="kn">from</span> <span class="nn">external_services.stripe.stripe_client</span> <span class="kn">import</span> <span class="n">collect_invoices_from_stripe</span><span class="p">,</span> <span class="n">collect_missing_invoices</span>  <span class="c1"># Import funkcji do pobierania faktur z Stripe</span>
-</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>
-</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>
-</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="sd">&quot;&quot;&quot;Pobierz i przekształć faktury ze Stripe&quot;&quot;&quot;</span>
-</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="n">missing_invoices</span> <span class="o">=</span> <span class="n">collect_missing_invoices</span><span class="p">()</span>  <span class="c1"># Pobranie brakujących faktur ze Stripe</span>
-</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="n">all_stripe_invoices</span> <span class="o">=</span> <span class="n">collect_invoices_from_stripe</span><span class="p">(</span><span class="n">missing_invoices</span><span class="p">)</span>  <span class="c1"># Pobranie wszystkich faktur ze Stripe</span>
-</span></code></pre></div>
-<h4 id="3b-funkcja-morph_json_with_pandas">3b. Funkcja morph_json_with_pandas</h4>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span> <span class="nf">morph_json_with_pandas</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Przekształć dane JSON na DataFrame i przefiltruj kolumny&quot;&quot;&quot;</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">columns_wanted</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;amount_paid&#39;</span><span class="p">,</span> <span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="s1">&#39;created&#39;</span><span class="p">,</span> 
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s1">&#39;status&#39;</span><span class="p">,</span> <span class="s1">&#39;customer&#39;</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">]</span>  <span class="c1"># Definicja kolumn, które chcemy zachować</span>
+<li>
+<p>Pobierz dane z webhooka</p>
+</li>
+<li>Dodaj lub zaktualizuj dane w bazie</li>
+<li>
+<p>Wykonaj niezbędne operacje lub zapytania</p>
+</li>
+<li>
+<p>Zwróć wynik w formie słownika lub listy słowników.</p>
+</li>
+</ol>
+<h2 id="przykad">Przykład</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span> <span class="nf">example_webhook</span><span class="p">(</span><span class="n">mongo_client</span><span class="p">:</span> <span class="n">MongoClient</span><span class="p">,</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                    <span class="n">request_body</span><span class="p">:</span> <span class="n">RequestBody</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>                    <span class="n">request_url_params</span><span class="p">:</span> <span class="n">RequestUrlParams</span><span class="p">):</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="c1"># Pobierz dane z webhooka</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="c1"># Przykład: payment_id = request_body.get(&#39;payment_id&#39;)</span>
 </span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># Stworzenie DataFrame z danych JSON</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">columns_wanted</span><span class="p">]</span>  <span class="c1"># Zachowanie tylko wybranych kolumn w DataFrame</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="c1"># Dodaj dane do bazy</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="c1"># Przykład: mongo_client[&#39;payments&#39;].insert_one({&#39;payment_id&#39;: payment_id})</span>
 </span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>  <span class="c1"># Przekształcenie kolumny &#39;created&#39; na typ int</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="c1"># Przypisanie wartości do odpowiednich kolumn</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;amount_paid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;amount_paid&#39;</span><span class="p">]</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;hours_capacity_per_payment&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;lines&#39;</span><span class="p">][</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;plan&#39;</span><span class="p">][</span><span class="s1">&#39;metadata&#39;</span><span class="p">][</span><span class="s1">&#39;hours_capacity_per_payment&#39;</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span>
-</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;customer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;customer&#39;</span><span class="p">]</span>
-</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
-</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>    <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;lines&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>
-</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>    <span class="k">return</span> <span class="n">df</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="c1"># Wykonaj inne operacje</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="c1"># Przykład: sync_data(payment_id)</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="k">return</span> <span class="p">{</span> <span class="s2">&quot;request_body&quot;</span><span class="p">:</span> <span class="n">request_body</span><span class="p">,</span> <span class="s2">&quot;request_url_params&quot;</span><span class="p">:</span> <span class="n">request_url_params</span> <span class="p">}</span>
 </span></code></pre></div>
-<h4 id="3c-funkcja-validate_output">3c. Funkcja validate_output</h4>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span> <span class="nf">validate_output</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">schema_out</span><span class="p">):</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="k">return</span> <span class="n">Validator</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">schema_out</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="4-cay-kod-akcji-pobierania-zasobu">4. Cały kod akcji pobierania zasobu</h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>  <span class="c1"># Import Pandas do pracy z danymi w formie tabel</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>  <span class="c1"># Import funkcji load_dotenv do ładowania zmiennych środowiskowych z pliku .env</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">from</span> <span class="nn">__resources__.types</span> <span class="kn">import</span> <span class="n">Resource</span><span class="p">,</span> <span class="n">MongoClient</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kn">from</span> <span class="nn">external_services.stripe.utils</span> <span class="kn">import</span> <span class="n">check_if_metadata_exists</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="kn">from</span> <span class="nn">external_services.stripe.stripe_client</span> <span class="kn">import</span> <span class="n">collect_invoices_from_stripe</span><span class="p">,</span> <span class="n">collect_missing_invoices</span>  <span class="c1"># Import funkcji do pobierania faktur z Stripe</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>  <span class="c1"># Import typów dla adnotacji</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="kn">from</span> <span class="nn">utils.validator</span> <span class="kn">import</span> <span class="n">Validator</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="n">schema_out</span> <span class="o">=</span> <span class="p">{</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    <span class="s2">&quot;amount_paid&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="s2">&quot;total&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>    <span class="s2">&quot;created&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>    <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>    <span class="s2">&quot;customer&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>    <span class="s2">&quot;hours_capacity_per_payment&quot;</span><span class="p">:</span> <span class="nb">int</span>
-</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="p">}</span>
-</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>
-</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>
-</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="k">def</span> <span class="nf">morph_json_with_pandas</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
-</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Przekształć dane JSON na DataFrame i przefiltruj kolumny&quot;&quot;&quot;</span>
-</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>    <span class="n">columns_wanted</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>        <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;amount_paid&#39;</span><span class="p">,</span> <span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="s1">&#39;created&#39;</span><span class="p">,</span> 
-</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>        <span class="s1">&#39;status&#39;</span><span class="p">,</span> <span class="s1">&#39;customer&#39;</span>
-</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>    <span class="p">]</span>  <span class="c1"># Definicja kolumn, które chcemy zachować</span>
-</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>
-</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># Stworzenie DataFrame z danych JSON</span>
-</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">columns_wanted</span><span class="p">]</span>  <span class="c1"># Zachowanie tylko wybranych kolumn w DataFrame</span>
-</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a>
-</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>  <span class="c1"># Przekształcenie kolumny &#39;created&#39; na typ int</span>
-</span><span id="__span-6-32"><a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>
-</span><span id="__span-6-33"><a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a>    <span class="c1"># Przypisanie wartości do odpowiednich kolumn</span>
-</span><span id="__span-6-34"><a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
-</span><span id="__span-6-35"><a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;amount_paid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;amount_paid&#39;</span><span class="p">]</span>
-</span><span id="__span-6-36"><a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;hours_capacity_per_payment&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;lines&#39;</span><span class="p">][</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;plan&#39;</span><span class="p">][</span><span class="s1">&#39;metadata&#39;</span><span class="p">][</span><span class="s1">&#39;hours_capacity_per_payment&#39;</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-6-37"><a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span>
-</span><span id="__span-6-38"><a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span>
-</span><span id="__span-6-39"><a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a>    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;customer&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;customer&#39;</span><span class="p">]</span>
-</span><span id="__span-6-40"><a id="__codelineno-6-40" name="__codelineno-6-40" href="#__codelineno-6-40"></a>
-</span><span id="__span-6-41"><a id="__codelineno-6-41" name="__codelineno-6-41" href="#__codelineno-6-41"></a>    <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;lines&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Usunięcie kolumny &#39;lines&#39; z DataFrame</span>
-</span><span id="__span-6-42"><a id="__codelineno-6-42" name="__codelineno-6-42" href="#__codelineno-6-42"></a>    <span class="k">return</span> <span class="n">df</span>
-</span><span id="__span-6-43"><a id="__codelineno-6-43" name="__codelineno-6-43" href="#__codelineno-6-43"></a>
-</span><span id="__span-6-44"><a id="__codelineno-6-44" name="__codelineno-6-44" href="#__codelineno-6-44"></a>
-</span><span id="__span-6-45"><a id="__codelineno-6-45" name="__codelineno-6-45" href="#__codelineno-6-45"></a><span class="k">def</span> <span class="nf">validate_output</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">schema_out</span><span class="p">):</span>
-</span><span id="__span-6-46"><a id="__codelineno-6-46" name="__codelineno-6-46" href="#__codelineno-6-46"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Waliduje dane w DataFrame zgodnie z podanym schematem.&quot;&quot;&quot;</span>
-</span><span id="__span-6-47"><a id="__codelineno-6-47" name="__codelineno-6-47" href="#__codelineno-6-47"></a>    <span class="k">return</span> <span class="n">Validator</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">schema_out</span><span class="p">)</span>
-</span><span id="__span-6-48"><a id="__codelineno-6-48" name="__codelineno-6-48" href="#__codelineno-6-48"></a>
-</span><span id="__span-6-49"><a id="__codelineno-6-49" name="__codelineno-6-49" href="#__codelineno-6-49"></a>
-</span><span id="__span-6-50"><a id="__codelineno-6-50" name="__codelineno-6-50" href="#__codelineno-6-50"></a><span class="k">def</span> <span class="nf">fetch_stripe_invoices</span><span class="p">(</span><span class="n">resource_setting</span><span class="p">:</span> <span class="n">Resource</span><span class="p">,</span> <span class="n">mongo_client</span><span class="p">:</span> <span class="n">MongoClient</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
-</span><span id="__span-6-51"><a id="__codelineno-6-51" name="__codelineno-6-51" href="#__codelineno-6-51"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Pobierz i przekształć faktury ze Stripe&quot;&quot;&quot;</span>
-</span><span id="__span-6-52"><a id="__codelineno-6-52" name="__codelineno-6-52" href="#__codelineno-6-52"></a>
-</span><span id="__span-6-53"><a id="__codelineno-6-53" name="__codelineno-6-53" href="#__codelineno-6-53"></a>    <span class="n">missing_invoices</span> <span class="o">=</span> <span class="n">collect_missing_invoices</span><span class="p">()</span>  <span class="c1"># Pobranie brakujących faktur ze Stripe</span>
-</span><span id="__span-6-54"><a id="__codelineno-6-54" name="__codelineno-6-54" href="#__codelineno-6-54"></a>    <span class="n">all_stripe_invoices</span> <span class="o">=</span> <span class="n">collect_invoices_from_stripe</span><span class="p">(</span><span class="n">missing_invoices</span><span class="p">)</span>  <span class="c1"># Pobranie wszystkich faktur ze Stripe</span>
-</span><span id="__span-6-55"><a id="__codelineno-6-55" name="__codelineno-6-55" href="#__codelineno-6-55"></a>
-</span><span id="__span-6-56"><a id="__codelineno-6-56" name="__codelineno-6-56" href="#__codelineno-6-56"></a>    <span class="n">df_invoices</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">all_stripe_invoices</span><span class="p">)</span>  <span class="c1"># Stworzenie DataFrame ze wszystkich faktur</span>
-</span><span id="__span-6-57"><a id="__codelineno-6-57" name="__codelineno-6-57" href="#__codelineno-6-57"></a>
-</span><span id="__span-6-58"><a id="__codelineno-6-58" name="__codelineno-6-58" href="#__codelineno-6-58"></a>    <span class="c1"># Przefiltrowanie faktur, aby usunąć te z określonymi ID</span>
-</span><span id="__span-6-59"><a id="__codelineno-6-59" name="__codelineno-6-59" href="#__codelineno-6-59"></a>    <span class="n">filtered_all_invoices</span> <span class="o">=</span> <span class="n">df_invoices</span><span class="p">[</span><span class="o">~</span><span class="n">df_invoices</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;in_1PTOUuE2fekoERPNjIgQdiNh&#39;</span><span class="p">,</span> <span class="s1">&#39;in_1PXip9E2fekoERPNATlFnNUR&#39;</span><span class="p">])]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="s1">&#39;records&#39;</span><span class="p">)</span> 
-</span><span id="__span-6-60"><a id="__codelineno-6-60" name="__codelineno-6-60" href="#__codelineno-6-60"></a>    <span class="n">df_invoices</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">filtered_all_invoices</span><span class="p">)</span>
-</span><span id="__span-6-61"><a id="__codelineno-6-61" name="__codelineno-6-61" href="#__codelineno-6-61"></a>
-</span><span id="__span-6-62"><a id="__codelineno-6-62" name="__codelineno-6-62" href="#__codelineno-6-62"></a>    <span class="n">df_invoices</span><span class="p">[</span><span class="s1">&#39;lines&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_invoices</span><span class="p">[</span><span class="s1">&#39;lines&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">check_if_metadata_exists</span><span class="p">)</span>
-</span><span id="__span-6-63"><a id="__codelineno-6-63" name="__codelineno-6-63" href="#__codelineno-6-63"></a>
-</span><span id="__span-6-64"><a id="__codelineno-6-64" name="__codelineno-6-64" href="#__codelineno-6-64"></a>    <span class="n">filtered_all_invoices</span> <span class="o">=</span> <span class="n">df_invoices</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">)</span>
-</span><span id="__span-6-65"><a id="__codelineno-6-65" name="__codelineno-6-65" href="#__codelineno-6-65"></a>
-</span><span id="__span-6-66"><a id="__codelineno-6-66" name="__codelineno-6-66" href="#__codelineno-6-66"></a>    <span class="n">filtered_all_invoices</span> <span class="o">=</span> <span class="n">df_invoices</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">)</span>
-</span><span id="__span-6-67"><a id="__codelineno-6-67" name="__codelineno-6-67" href="#__codelineno-6-67"></a>
-</span><span id="__span-6-68"><a id="__codelineno-6-68" name="__codelineno-6-68" href="#__codelineno-6-68"></a>    <span class="n">complete_invoices</span> <span class="o">=</span> <span class="n">morph_json_with_pandas</span><span class="p">(</span><span class="n">filtered_all_invoices</span><span class="p">)</span>
-</span><span id="__span-6-69"><a id="__codelineno-6-69" name="__codelineno-6-69" href="#__codelineno-6-69"></a>
-</span><span id="__span-6-70"><a id="__codelineno-6-70" name="__codelineno-6-70" href="#__codelineno-6-70"></a>    <span class="n">complete_invoices</span> <span class="o">=</span> <span class="n">validate_output</span><span class="p">(</span><span class="n">complete_invoices</span><span class="p">,</span> <span class="n">schema_out</span><span class="p">)</span>
-</span><span id="__span-6-71"><a id="__codelineno-6-71" name="__codelineno-6-71" href="#__codelineno-6-71"></a>
-</span><span id="__span-6-72"><a id="__codelineno-6-72" name="__codelineno-6-72" href="#__codelineno-6-72"></a>    <span class="n">dict_invoices</span> <span class="o">=</span> <span class="n">complete_invoices</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">)</span>
-</span><span id="__span-6-73"><a id="__codelineno-6-73" name="__codelineno-6-73" href="#__codelineno-6-73"></a>
-</span><span id="__span-6-74"><a id="__codelineno-6-74" name="__codelineno-6-74" href="#__codelineno-6-74"></a>    <span class="k">return</span> <span class="n">dict_invoices</span>  <span class="c1"># Zwrócenie kompletnych faktur</span>
-</span></code></pre></div>
+<h2 id="bezpieczenstwo">Bezpieczeństwo</h2>
+<ul>
+<li>Zawsze weryfikuj źródło przychodzących żądań webhook.</li>
+<li>Używaj szyfrowania HTTPS dla wszystkich połączeń webhook.</li>
+<li>Rozważ implementację mechanizmu podpisywania żądań dla dodatkowego bezpieczeństwa.</li>
+</ul>
+<h2 id="podsumowanie">Podsumowanie</h2>
+<p>Webhooki w Data Backbone zapewniają elastyczny sposób na utrzymanie aktualności danych poprzez automatyczne reagowanie na zdarzenia w zewnętrznych systemach. Prawidłowo skonfigurowane i zabezpieczone webhooki mogą znacznie usprawnić proces synchronizacji danych i zapewnić, że twoje analizy zawsze opierają się na najświeższych informacjach.</p>
 
 
 

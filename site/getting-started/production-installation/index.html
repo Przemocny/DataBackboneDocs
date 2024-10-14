@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../data-sync/">
+        <link rel="prev" href="../development-installation/">
       
       
-        <link rel="next" href="../../utils/parallel/">
+        <link rel="next" href="../requirements/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Użycie DataBackbone API - </title>
+        <title>Instalacja środowiska produkcyjnego - </title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uzycie-databackbone-api" class="md-skip">
+        <a href="#instalacja-srodowiska-produkcyjnego" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Użycie DataBackbone API
+              Instalacja środowiska produkcyjnego
             
           </span>
         </div>
@@ -225,17 +225,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -249,7 +251,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Pierwsze kroki
@@ -263,7 +265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/env-description/" class="md-nav__link">
+      <a href="../env-description/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -284,7 +286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/development-installation/" class="md-nav__link">
+      <a href="../development-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -302,10 +304,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../getting-started/production-installation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Instalacja środowiska produkcyjnego
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -314,6 +336,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wprowadzenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wprowadzenie
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wymagania-wstepne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wymagania wstępne
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kroki-instalacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kroki instalacji
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kroki instalacji">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-przygotowanie-serwera" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Przygotowanie serwera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-instalacja-docker-i-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Instalacja Docker i Docker Compose
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Instalacja Docker i Docker Compose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metoda-1-instalacja-przez-konsole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metoda 1: Instalacja przez konsolę
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metoda-2-instalacja-poprzez-pobranie-ze-strony" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metoda 2: Instalacja poprzez pobranie ze strony
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pobranie-repozytorium-data-backbone" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Pobranie repozytorium Data Backbone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-konfiguracja-srodowiska" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Konfiguracja środowiska
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-uruchomienie-srodowiska" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Uruchomienie środowiska
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podsumowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Podsumowanie
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -326,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/requirements/" class="md-nav__link">
+      <a href="../requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -498,19 +651,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -524,7 +675,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Przewodnik użytkownika
@@ -538,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-fetching/" class="md-nav__link">
+      <a href="../../user-guide/data-fetching/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -559,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-preprocessing/" class="md-nav__link">
+      <a href="../../user-guide/data-preprocessing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data-sync/" class="md-nav__link">
+      <a href="../../user-guide/data-sync/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -598,30 +749,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Użycie DataBackbone API
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../user-guide/api-usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,146 +761,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wprowadzenie" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wprowadzenie
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#zasoby" class="md-nav__link">
-    <span class="md-ellipsis">
-      Zasoby
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Zasoby">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#endpoint-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Endpoint API
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#przykad-uzycia" class="md-nav__link">
-    <span class="md-ellipsis">
-      Przykład użycia
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#format-odpowiedzi" class="md-nav__link">
-    <span class="md-ellipsis">
-      Format odpowiedzi
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wskazniki" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wskaźniki
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Wskaźniki">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#endpoint-api_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Endpoint API
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#przykad-uzycia_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Przykład użycia
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#format-odpowiedzi_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Format odpowiedzi
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#obsuga-bedow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Obsługa błędów
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ograniczenia" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ograniczenia
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#podsumowanie" class="md-nav__link">
-    <span class="md-ellipsis">
-      Podsumowanie
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1280,37 +1271,56 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zasoby" class="md-nav__link">
+  <a href="#wymagania-wstepne" class="md-nav__link">
     <span class="md-ellipsis">
-      Zasoby
+      Wymagania wstępne
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Zasoby">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kroki-instalacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kroki instalacji
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kroki instalacji">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#endpoint-api" class="md-nav__link">
+  <a href="#1-przygotowanie-serwera" class="md-nav__link">
     <span class="md-ellipsis">
-      Endpoint API
+      1. Przygotowanie serwera
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#przykad-uzycia" class="md-nav__link">
+  <a href="#2-instalacja-docker-i-docker-compose" class="md-nav__link">
     <span class="md-ellipsis">
-      Przykład użycia
+      2. Instalacja Docker i Docker Compose
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Instalacja Docker i Docker Compose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metoda-1-instalacja-przez-konsole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metoda 1: Instalacja przez konsolę
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#format-odpowiedzi" class="md-nav__link">
+  <a href="#metoda-2-instalacja-poprzez-pobranie-ze-strony" class="md-nav__link">
     <span class="md-ellipsis">
-      Format odpowiedzi
+      Metoda 2: Instalacja poprzez pobranie ze strony
     </span>
   </a>
   
@@ -1320,39 +1330,29 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#wskazniki" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wskaźniki
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Wskaźniki">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#endpoint-api_1" class="md-nav__link">
+  <a href="#3-pobranie-repozytorium-data-backbone" class="md-nav__link">
     <span class="md-ellipsis">
-      Endpoint API
+      3. Pobranie repozytorium Data Backbone
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#przykad-uzycia_1" class="md-nav__link">
+  <a href="#4-konfiguracja-srodowiska" class="md-nav__link">
     <span class="md-ellipsis">
-      Przykład użycia
+      4. Konfiguracja środowiska
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#format-odpowiedzi_1" class="md-nav__link">
+  <a href="#5-uruchomienie-srodowiska" class="md-nav__link">
     <span class="md-ellipsis">
-      Format odpowiedzi
+      5. Uruchomienie środowiska
     </span>
   </a>
   
@@ -1360,24 +1360,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#obsuga-bedow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Obsługa błędów
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ograniczenia" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ograniczenia
-    </span>
-  </a>
   
 </li>
       
@@ -1405,117 +1387,60 @@
                   
 
 
-<h1 id="uzycie-databackbone-api">Użycie DataBackbone API</h1>
+<h1 id="instalacja-srodowiska-produkcyjnego">Instalacja środowiska produkcyjnego</h1>
 <h2 id="wprowadzenie">Wprowadzenie</h2>
-<p>Data Backbone udostępnia API, które pozwala na pobieranie danych wskaźników oraz zasobów z zewnętrznych aplikacji. Ten fragment dokumentacji opisuje, jak korzystać z API Data Backbone, na przykładzie integracji z platformami automatyzacji, takimi jak Make.com.</p>
-<h2 id="zasoby">Zasoby</h2>
-<h3 id="endpoint-api">Endpoint API</h3>
-<p>Endpoint API Data Backbone do pobierania danych zasobu:
-<code>GET /data/resource/{resourceName}</code></p>
-<p>gdzie <code>{resourceName}</code> to nazwa zasobu, którego dane chcesz pobrać.</p>
-<h3 id="przykad-uzycia">Przykład użycia</h3>
-<p>Załóżmy, że chcesz pobrać dane zasobu faktur Stripe z Make.com. Oto jak możesz to zrobić:</p>
-<ol>
-<li>W Make.com, dodaj nowy moduł HTTP.</li>
-<li>
-<p>Skonfiguruj moduł HTTP w następujący sposób:</p>
-</li>
-<li>
-<p>Metoda: GET</p>
-</li>
-<li>URL: <code>https://localhost:8000/data/resource/StripeInvoices</code></li>
-<li>
-<p>Nagłówki: Dodaj odpowiednie nagłówki autoryzacji, jeśli są wymagane.</p>
-</li>
-<li>
-<p>Po wykonaniu scenariusza, Make.com pobierze dane faktur Stripe z Data Backbone w formacie JSON.</p>
-</li>
-</ol>
-<h3 id="format-odpowiedzi">Format odpowiedzi</h3>
-<p>Odpowiedź API będzie w formacie JSON. Przykładowa struktura danych faktur Stripe może wyglądać następująco:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;in_1234567890&quot;</span><span class="p">,</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">      </span><span class="nt">&quot;customer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cus_9876543210&quot;</span><span class="p">,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">      </span><span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">&quot;currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PLN&quot;</span><span class="p">,</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;paid&quot;</span><span class="p">,</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">      </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-06-01T10:00:00Z&quot;</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;in_0987654321&quot;</span><span class="p">,</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="nt">&quot;customer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cus_1234567890&quot;</span><span class="p">,</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="nt">&quot;amount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">15000</span><span class="p">,</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">&quot;currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PLN&quot;</span><span class="p">,</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;open&quot;</span><span class="p">,</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">      </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-06-15T14:30:00Z&quot;</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">  </span><span class="p">],</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">  </span><span class="nt">&quot;meta&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="nt">&quot;lastUpdated&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-06-15T15:00:00Z&quot;</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="wskazniki">Wskaźniki</h2>
-<h3 id="endpoint-api_1">Endpoint API</h3>
-<p>Endpoint API Data Backbone do pobierania danych wskaźnika:
-<code>GET /data/indicator/{indicatorName}</code></p>
-<p>gdzie <code>{indicatorName}</code> to nazwa wskaźnika, którego dane chcesz pobrać.</p>
-<h3 id="przykad-uzycia_1">Przykład użycia</h3>
-<p>Załóżmy, że chcesz pobrać dane wskaźnika RZIS (Rachunek Zysków i Strat) do Make.com. Oto jak możesz to zrobić:</p>
-<ol>
-<li>W Make.com, dodaj nowy moduł HTTP.</li>
-<li>
-<p>Skonfiguruj moduł HTTP w następujący sposób:</p>
-</li>
-<li>
-<p>Metoda: GET</p>
-</li>
-<li>URL: <code>https://localhost:8000/data/indicator/RZIS</code></li>
-<li>
-<p>Nagłówki: Dodaj odpowiednie nagłówki autoryzacji, jeśli są wymagane.</p>
-</li>
-<li>
-<p>Po wykonaniu scenariusza, Make.com pobierze dane RZIS z Data Backbone w formacie JSON.</p>
-</li>
-</ol>
-<h3 id="format-odpowiedzi_1">Format odpowiedzi</h3>
-<p>Odpowiedź API będzie w formacie JSON. Przykładowa struktura danych RZIS może wyglądać następująco:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nt">&quot;miesiac&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Styczeń&quot;</span><span class="p">,</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="nt">&quot;przychody&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100000</span><span class="p">,</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="nt">&quot;koszty&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">80000</span><span class="p">,</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">      </span><span class="nt">&quot;zysk&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">      </span><span class="nt">&quot;miesiac&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Luty&quot;</span><span class="p">,</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span><span class="nt">&quot;przychody&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120000</span><span class="p">,</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">      </span><span class="nt">&quot;koszty&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">90000</span><span class="p">,</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">      </span><span class="nt">&quot;zysk&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30000</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="p">],</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span><span class="nt">&quot;meta&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="nt">&quot;lastUpdated&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-06-15T10:30:00Z&quot;</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="obsuga-bedow">Obsługa błędów</h2>
-<p>API może zwrócić następujące kody błędów:</p>
+<p>Data Backbone oferuje pełne środowisko produkcyjne oparte na Docker Compose. Ta metoda zapewnia łatwe wdrożenie i zarządzanie wszystkimi komponentami systemu w środowisku produkcyjnym.</p>
+<h2 id="wymagania-wstepne">Wymagania wstępne</h2>
 <ul>
-<li>400 Bad Request: Nieprawidłowe zapytanie</li>
-<li>404 Not Found: Wskaźnik o podanej nazwie nie istnieje</li>
-<li>500 Internal Server Error: Błąd serwera</li>
+<li>Zainstalowany Docker</li>
+<li>Zainstalowany Docker Compose</li>
+<li>Serwer z systemem Linux (zalecany Ubuntu 20.04 LTS lub nowszy)</li>
+<li>Minimum 4 GB RAM i 20 GB przestrzeni dyskowej</li>
 </ul>
-<h2 id="ograniczenia">Ograniczenia</h2>
-<ul>
-<li>Limit zapytań: 1000 na godzinę</li>
-<li>Maksymalny rozmiar odpowiedzi: 10 MB</li>
-</ul>
+<h2 id="kroki-instalacji">Kroki instalacji</h2>
+<h3 id="1-przygotowanie-serwera">1. Przygotowanie serwera</h3>
+<p>Zaktualizuj system i zainstaluj niezbędne narzędzia:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>git<span class="w"> </span>curl
+</span></code></pre></div>
+<h3 id="2-instalacja-docker-i-docker-compose">2. Instalacja Docker i Docker Compose</h3>
+<p>Istnieją dwie metody instalacji Docker i Docker Compose: poprzez konsolę lub pobierając instalatory ze strony internetowej.</p>
+<h4 id="metoda-1-instalacja-przez-konsole">Metoda 1: Instalacja przez konsolę</h4>
+<p>Zainstaluj Docker:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://get.docker.com<span class="w"> </span>-o<span class="w"> </span>get-docker.sh
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>sh<span class="w"> </span>get-docker.sh
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span><span class="nv">$USER</span>
+</span></code></pre></div>
+<p>Zainstaluj Docker Compose:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>curl<span class="w"> </span>-L<span class="w"> </span><span class="s2">&quot;https://github.com/docker/compose/releases/download/1.29.2/docker-compose-</span><span class="k">$(</span>uname<span class="w"> </span>-s<span class="k">)</span><span class="s2">-</span><span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>-o<span class="w"> </span>/usr/local/bin/docker-compose
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>/usr/local/bin/docker-compose
+</span></code></pre></div>
+<h4 id="metoda-2-instalacja-poprzez-pobranie-ze-strony">Metoda 2: Instalacja poprzez pobranie ze strony</h4>
+<ol>
+<li>Przejdź na oficjalną stronę Docker: <a href="https://www.docker.com/products/docker-desktop" target="_blank">https://www.docker.com/products/docker-desktop</a></li>
+<li>Pobierz instalator odpowiedni dla Twojego systemu operacyjnego (Windows, macOS lub Linux).</li>
+<li>Uruchom pobrany instalator i postępuj zgodnie z instrukcjami na ekranie.</li>
+<li>Po zainstalowaniu Docker Desktop, Docker Compose będzie już dostępny w systemie.</li>
+</ol>
+<p>Po zakończeniu instalacji, niezależnie od wybranej metody, zweryfikuj poprawność instalacji, wykonując w terminalu następujące polecenia:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>--version
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>docker-compose<span class="w"> </span>--version
+</span></code></pre></div>
+<p>Jeśli instalacja przebiegła pomyślnie, powinieneś zobaczyć numery wersji zainstalowanych narzędzi.</p>
+<h3 id="3-pobranie-repozytorium-data-backbone">3. Pobranie repozytorium Data Backbone</h3>
+<p>Sklonuj repozytorium Data Backbone:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/twoja-organizacja/data-backbone.git
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">cd</span><span class="w"> </span>data-backbone
+</span></code></pre></div>
+<h3 id="4-konfiguracja-srodowiska">4. Konfiguracja środowiska</h3>
+<p>Utwórz plik <code>.env</code> w katalogu <code>/app</code> i skonfiguruj w nim niezbędne zmienne środowiskowe:</p>
+<p>Dostosuj wartości zmiennych do swojego środowiska produkcyjnego.</p>
+<h3 id="5-uruchomienie-srodowiska">5. Uruchomienie środowiska</h3>
+<p>Uruchom środowisko za pomocą Docker Compose:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
+</span></code></pre></div>
 <h2 id="podsumowanie">Podsumowanie</h2>
-<p>Korzystanie z API Data Backbone pozwala na łatwe integrowanie danych wskaźników z zewnętrznymi narzędziami. Dzięki prostym endpointom, możesz pobierać aktualne dane wskaźników i wykorzystywać je w swoich automatyzacjach i analizach.</p>
+<p>Teraz masz gotowe produkcyjne środowisko Data Backbone. Pamiętaj o regularnym monitorowaniu, aktualizacjach i tworzeniu kopii zapasowych. W przypadku problemów, zawsze możesz skorzystać z dokumentacji lub zwrócić się o pomoc do zespołu wsparcia Data Backbone.</p>
 
 
 

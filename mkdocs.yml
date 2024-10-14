@@ -4,7 +4,6 @@ nav:
   - Strona główna: index.md
 
   - Pierwsze kroki:
-      - Instalacja: getting-started/installation.md
       - Opis środowiska: getting-started/env-description.md
       - Instalacja środowiska developerskiego: getting-started/development-installation.md
       - Instalacja środowiska produkcyjnego: getting-started/production-installation.md

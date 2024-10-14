@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
     
     
       
@@ -263,11 +263,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/installation/" class="md-nav__link">
+      <a href="../../getting-started/env-description/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Instalacja
+    Opis środowiska
   </span>
   
 
@@ -284,11 +284,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/env-description/" class="md-nav__link">
+      <a href="../../getting-started/development-installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Opis środowiska
+    Instalacja środowiska developerskiego
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/production-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja środowiska produkcyjnego
   </span>
   
 
@@ -1370,7 +1391,7 @@
 <h2 id="czym-jest-zasob">Czym jest zasób</h2>
 <p>Koncept zasobu odnosi się do połączenia opisu</p>
 <h2 id="czym-jest-wskaznik">Czym jest wskaźnik</h2>
-<p>Koncept zasobu odnosi się do abstrakcyjnego przedstawienia danych lub funkcji, które są dostępne w systemie, umożliwiając ich łatwe zarządzanie i integrację. Zasoby mogą reprezentować różnorodne elementy, takie jak dane finansowe, użytkownicy czy transakcje, i są często wykorzystywane w aplikacjach do organizacji i strukturyzacji informacji. </p>
+<p>Koncept zasobu odnosi się do abstrakcyjnego przedstawienia danych lub funkcji, które są dostępne w systemie, umożliwiając ich łatwe zarządzanie i integrację. Zasoby mogą reprezentować różnorodne elementy, takie jak dane finansowe, użytkownicy czy transakcje, i są często wykorzystywane w aplikacjach do organizacji i strukturyzacji informacji.</p>
 <h2 id="struktura-json-zasobu">Struktura JSON Zasobu</h2>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;StripeInvoices&quot;</span><span class="p">,</span>
@@ -1387,12 +1408,10 @@
 <ul>
 <li>Niezbędne zależności do realizacji logiki biznesowej</li>
 <li>Schema walidacji danych wychodzących</li>
-<li>Części akcji pobierania zasobu<ul>
+<li>Części akcji pobierania zasobu</li>
 <li>Funkcje collect</li>
 <li>Funkcja morph_json_with_pandas</li>
 <li>Funkcja validate_output</li>
-</ul>
-</li>
 <li>Cały kod akcji pobierania zasobu</li>
 </ul>
 <h3 id="1-niezbedne-zaleznosci-do-realizacji-logiki-biznesowej">1. Niezbędne zależności do realizacji logiki biznesowej</h3>
@@ -1436,7 +1455,7 @@
 </span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">invoices</span><span class="p">)</span> <span class="o">==</span> <span class="n">NUMBER_OF_MISSING_INVOICES</span><span class="p">:</span>
 </span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>        <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.stripe.com/v1/invoices?status=paid&amp;limit=100&quot;</span>  <span class="c1"># URL do pobierania faktur z Stripe</span>
 </span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">invoices</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">NUMBER_OF_MISSING_INVOICES</span><span class="p">:</span>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://api.stripe.com/v1/invoices?status=paid&amp;limit=100&amp;starting_after=</span><span class="si">{</span><span class="n">invoices</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span> 
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://api.stripe.com/v1/invoices?status=paid&amp;limit=100&amp;starting_after=</span><span class="si">{</span><span class="n">invoices</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
 </span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
 </span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>  <span class="c1"># Wykonaj żądanie HTTP GET do API Stripe</span>
 </span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>
@@ -1465,7 +1484,7 @@
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span> <span class="nf">morph_json_with_pandas</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Przekształć dane JSON na DataFrame i przefiltruj kolumny&quot;&quot;&quot;</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">columns_wanted</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;amount_paid&#39;</span><span class="p">,</span> <span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="s1">&#39;created&#39;</span><span class="p">,</span> 
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;amount_paid&#39;</span><span class="p">,</span> <span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="s1">&#39;created&#39;</span><span class="p">,</span>
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s1">&#39;status&#39;</span><span class="p">,</span> <span class="s1">&#39;customer&#39;</span>
 </span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">]</span>  <span class="c1"># Definicja kolumn, które chcemy zachować</span>
 </span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
@@ -1515,7 +1534,7 @@
 </span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="k">def</span> <span class="nf">morph_json_with_pandas</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
 </span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Przekształć dane JSON na DataFrame i przefiltruj kolumny&quot;&quot;&quot;</span>
 </span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>    <span class="n">columns_wanted</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>        <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;amount_paid&#39;</span><span class="p">,</span> <span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="s1">&#39;created&#39;</span><span class="p">,</span> 
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>        <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;amount_paid&#39;</span><span class="p">,</span> <span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="s1">&#39;created&#39;</span><span class="p">,</span>
 </span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>        <span class="s1">&#39;status&#39;</span><span class="p">,</span> <span class="s1">&#39;customer&#39;</span>
 </span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>    <span class="p">]</span>  <span class="c1"># Definicja kolumn, które chcemy zachować</span>
 </span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>
@@ -1550,7 +1569,7 @@
 </span><span id="__span-6-56"><a id="__codelineno-6-56" name="__codelineno-6-56" href="#__codelineno-6-56"></a>    <span class="n">df_invoices</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">all_stripe_invoices</span><span class="p">)</span>  <span class="c1"># Stworzenie DataFrame ze wszystkich faktur</span>
 </span><span id="__span-6-57"><a id="__codelineno-6-57" name="__codelineno-6-57" href="#__codelineno-6-57"></a>
 </span><span id="__span-6-58"><a id="__codelineno-6-58" name="__codelineno-6-58" href="#__codelineno-6-58"></a>    <span class="c1"># Przefiltrowanie faktur, aby usunąć te z określonymi ID</span>
-</span><span id="__span-6-59"><a id="__codelineno-6-59" name="__codelineno-6-59" href="#__codelineno-6-59"></a>    <span class="n">filtered_all_invoices</span> <span class="o">=</span> <span class="n">df_invoices</span><span class="p">[</span><span class="o">~</span><span class="n">df_invoices</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;in_1PTOUuE2fekoERPNjIgQdiNh&#39;</span><span class="p">,</span> <span class="s1">&#39;in_1PXip9E2fekoERPNATlFnNUR&#39;</span><span class="p">])]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="s1">&#39;records&#39;</span><span class="p">)</span> 
+</span><span id="__span-6-59"><a id="__codelineno-6-59" name="__codelineno-6-59" href="#__codelineno-6-59"></a>    <span class="n">filtered_all_invoices</span> <span class="o">=</span> <span class="n">df_invoices</span><span class="p">[</span><span class="o">~</span><span class="n">df_invoices</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;in_1PTOUuE2fekoERPNjIgQdiNh&#39;</span><span class="p">,</span> <span class="s1">&#39;in_1PXip9E2fekoERPNATlFnNUR&#39;</span><span class="p">])]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="s1">&#39;records&#39;</span><span class="p">)</span>
 </span><span id="__span-6-60"><a id="__codelineno-6-60" name="__codelineno-6-60" href="#__codelineno-6-60"></a>    <span class="n">df_invoices</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">filtered_all_invoices</span><span class="p">)</span>
 </span><span id="__span-6-61"><a id="__codelineno-6-61" name="__codelineno-6-61" href="#__codelineno-6-61"></a>
 </span><span id="__span-6-62"><a id="__codelineno-6-62" name="__codelineno-6-62" href="#__codelineno-6-62"></a>    <span class="n">df_invoices</span><span class="p">[</span><span class="s1">&#39;lines&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_invoices</span><span class="p">[</span><span class="s1">&#39;lines&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">check_if_metadata_exists</span><span class="p">)</span>
